@@ -1,0 +1,132 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* -----------------------------------------------------------*/
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/* --------- FORM --------- */
+
+form {
+  width: 350px;
+}
+
+.form-content {
+  width: 700px;
+  display: flex;
+  border: 1px solid white;
+  padding: 50px;
+  border-radius: 0.5rem;
+}
+
+.form-content .error {
+  color: red;
+  font-size: 0.7rem;
+}
+
+/* --------- CARD --------- */
+.card-content {
+  width: 350px;
+  padding-top: 20px;
+  background: rgb(255, 231, 151, 0.9);
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  color: #242424;
+  margin-left: 20px;
+  font-size: 0.9rem;
+}
+
+.card-content h2 {
+  text-align: center;
+}
+
+/* --------- LABEL --------- */
+label {
+  display: block;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* --------- INPUT --------- */
+input {
+  width: 100%;
+  height: 30px;
+  border-radius: 0.3rem;
+  text-indent: 0.5rem;
+}
+
+/* --------- BUTTON --------- */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  margin: 20px 0;
+  width: 100%;
+}
+
+button:hover {
+  background-color: rgb(94, 76, 253);
+  color: white;
+}
+
+.details-book {
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+.details-book li {
+  display: flex;
+  list-style-type: none;
+}
+
+.details-book div {
+  width: 50%;
+}
+
+.details-book div:first-child {
+  font-weight: bold;
+}
+/* -----------------------------------------------------------*/
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
